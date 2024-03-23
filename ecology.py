@@ -25,4 +25,9 @@ async def helping_nature(ctx):
         picture = discord.File(f)
     await ctx.send(file=picture)
     await ctx.send(f'если каждый человек будет сортировать мусор, мир станет в несколько раз чище')
-bot.run('token')
+@bot.command()
+async def helping(ctx):
+    await ctx.send(f'/helping_nature - расскажет, как правильно сортировать мусор')
+    await ctx.send(f'/ecology_mem - мемы про переработку мусора')
+
+bot.run('')
